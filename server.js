@@ -53,7 +53,7 @@ app.get('/api/status', (req, res) => {
 });
 
 // Serve Frontend Static Assets
-const frontendPath = path.join(__dirname, '../frontend');
+const frontendPath = path.join(__dirname, 'frontend');
 app.use(express.static(frontendPath));
 
 // Serve index.html for any other route (SPA Fallback)
